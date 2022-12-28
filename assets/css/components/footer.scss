@@ -1,0 +1,130 @@
+.footer {
+	margin-top: 18rem;
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 5rem;
+		@media (max-width: 48em) {
+			flex-direction: column;
+			gap: 6rem;
+		}
+	}
+	&__logo {
+		img {
+			width: 31.6rem;
+			height: 9.2rem;
+		}
+	}
+	&__column {
+		max-width: 36rem;
+	}
+	&__contacts {
+		margin-top: 5.7rem;
+		img {
+			width: 2rem;
+			height: 2.1rem;
+		}
+		span {
+			font-size: $base-font-size;
+			font-weight: bold;
+		}
+	}
+	&__phone {
+		display: flex;
+		gap: 0.8rem;
+	}
+	&__email {
+		display: flex;
+		gap: 0.8rem;
+		margin-top: 2rem;
+	}
+	&__social {
+		margin-top: 7.1rem;
+		p {
+			font-size: $base-font-size;
+			font-weight: bold;
+			margin-bottom: 2.1rem;
+		}
+		img {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+		span {
+			font-size: 1.6rem;
+			color: #7e838c;
+		}
+	}
+	&__social_networks {
+		display: flex;
+		gap: 2.5rem;
+		svg {
+			width: 2.5rem;
+			height: 2.5rem;
+		}
+	}
+	&__social_vk {
+		display: flex;
+		align-items: center;
+		gap: 0.9rem;
+	}
+	&__social_vk:hover {
+		path {
+			fill: $black;
+			transition: 0.2s;
+		}
+		span {
+			color: $black;
+			transition: 0.2s;
+		}
+	}
+	&__social_tg {
+		display: flex;
+		align-items: center;
+		gap: 0.9rem;
+	}
+	&__social_tg:hover {
+		path {
+			fill: $black;
+			transition: 0.2s;
+		}
+		span {
+			color: $black;
+			transition: 0.2s;
+		}
+	}
+	&__title {
+		font-size: $base-font-size;
+		font-weight: bold;
+		margin-bottom: 2.7rem;
+	}
+	&__list {
+		li {
+			margin-bottom: 2rem;
+		}
+		a {
+			font-size: 1.6rem;
+			color: #7e838c;
+		}
+		a:hover {
+			color: $black;
+		}
+	}
+	&__copyright {
+		display: flex;
+		justify-content: space-between;
+		padding: 5rem 0;
+		margin-top: 5.7rem;
+		border-top: 1px solid rgba(217, 218, 225, 0.8);
+		@media (max-width: 48em) {
+			flex-direction: column;
+			gap: 3rem;
+		}
+		a {
+			color: #7e838c;
+			font-size: 1.6rem;
+		}
+		a:hover {
+			color: $black;
+		}
+	}
+}
